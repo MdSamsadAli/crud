@@ -30,6 +30,7 @@
                         <div class="mt-5 mb-3 clearfix">
                             <h2 class="pull-left">Employees Details</h2>
                             <a href="insert.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a>
+                            <a href="proj.php" class="btn btn-primary pull-right">Dashboard</a>
                         </div>
                         <table class="table table-bordered table-striped text-center">
                             <thead>
@@ -61,10 +62,10 @@
                                     <td><?php echo $row['mobilenumber']; ?></td>
                                     <td><?php echo "<img src=".$row['image'].">"; ?></td>
                                     <td>
-                                        <a href="edit.php?id=<?php echo $row['id']; ?>" class="mr-3" title="View Record" data-toggle = "tooltip"><span class="fa fa-pencil"></span></a>
+                                        <a href="edit.php?id=<?php echo $row['id']; ?>" class="mr-3" title="View Record" data-toggle = "tooltip"><span class="fa fa-pencil">edit</span></a>
                                     </td>
                                     <td>
-                                        <a href="delete.php?id=<?php echo $row['id'];?>" class="mr-3" title="Record Delete" data-toggle = "tooltip"><span class="fa fa-trash"></span></a>
+                                        <a href="delete.php?id=<?php echo $row['id'];?>" class="mr-3" title="Record Delete" data-toggle = "tooltip"><span class="fa fa-trash">delete</span></a>
                                     </td>
                                 </tr>
                                 <?php $id++; ?>
